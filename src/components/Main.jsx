@@ -23,10 +23,11 @@ const Main = () => {
       <Routes>
         <Route path="/" element={<RepositoryList />} exact />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/signout" element={<RepositoryList />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </View>
   );
 };
-
+//         
 export default Main;
